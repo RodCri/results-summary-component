@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+@import "variables";
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+html{
+  font-size: 62.5%;
+}
+body{
+  font-size: 1rem;
+  font-family: 'Hanken Grotesk', sans-serif;
+}
+.content{
+  display: grid;
+  place-items: center;
+  .results{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    .result{
+      width: 90%;
+      height: 345px;
+      background: linear-gradient(180deg, $light-slate-blue-background 10%, $light-royal-blue-background 100%);
+      border-radius: 0 0 30px 30px;
+      color: $white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &__title{
+        padding: 24px 0;
+        font-size: 1.8rem;
+        color: $light-lavender;
+      }
+      &__score{
+        width: 140px;
+        height: 130px;
+        border-radius: 50%;
+        background: linear-gradient(180deg, $violet-blue-circle 10%, $light-royal-blue-background 100%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 20px;
+        .score__point{
+          font-size: 4rem;
+        }
+        .score__of{
+          font-size: 1.2rem;
+          color: $light-lavender;
+        }
+      }
+      &__info{
+        font-size: 2rem;
+        margin-bottom: 20px;
+        letter-spacing: .2rem;
+      }
+      &__description{
+        width: 250px;
+        font-size: 1.4rem;
+        color: $light-lavender;
+        text-align: center;
+        line-height: 2rem;
+      }
+    }
+    .summary{
+      width: 90%;
+      padding: 30px;
+      &__title{
+        font-size: 1.6rem;
+        color: $dark-gray-blue;
+        margin-bottom: 30px;
+      }
+      .tags{
+        display: flex;
+        flex-direction: column;
+        gap: 18px;
+        .tag{
+          width: 100%;
+          height: 55px;
+          display: flex;
+          align-items: center;
+          background-color: aquamarine;
+          border-radius: 12px;
+          padding: 0 20px;
+          &__icon{
+            
+          }
+          &__name{
+            
+          }
+          &__score{
+            margin-left: auto;
+          }
+        }
+      }
+    }
+  }
+}
