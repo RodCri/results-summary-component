@@ -21,6 +21,15 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    @media(min-width:920px){
+      max-width: 750px;
+      border-radius: 30px;
+      flex-direction: row;
+      justify-content: center;
+      -webkit-box-shadow: 14px 21px 30px -18px #e9effd;
+      -moz-box-shadow: 14px 21px 30px -18px #e9effd;
+      box-shadow: 19px 26px 30px -18px #c5d3f2;
+    }
     .result{
       width: 90%;
       max-width: 370px;
@@ -31,6 +40,10 @@ body{
       display: flex;
       flex-direction: column;
       align-items: center;
+      @media(min-width:920px){
+        height: 514px;
+        justify-content: center;
+      }
       &__title{
         padding: 24px 0;
         font-size: 1.8rem;
@@ -71,6 +84,9 @@ body{
       width: 90%;
       max-width: 370px;
       padding: 30px;
+      @media(min-width:920px){
+        border-radius: 30px;
+      }
       &__title{
         font-size: 1.6rem;
         color: $dark-gray-blue;
