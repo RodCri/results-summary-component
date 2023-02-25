@@ -51,12 +51,19 @@ body {
   .content .results .result {
     height: 514px;
     justify-content: center;
+    background: linear-gradient(180deg, #6542fe 40%, #312cea 100%);
   }
 }
 .content .results .result__title {
   padding: 24px 0;
   font-size: 1.8rem;
   color: hsl(241deg, 100%, 89%);
+}
+@media (min-width: 920px) {
+  .content .results .result__title {
+    font-size: 2.4rem;
+    padding: 0 0 4rem 0;
+  }
 }
 .content .results .result__score {
   width: 140px;
@@ -69,17 +76,40 @@ body {
   align-items: center;
   margin-bottom: 20px;
 }
+@media (min-width: 920px) {
+  .content .results .result__score {
+    width: 205px;
+    height: 195px;
+    margin-bottom: 4rem;
+    background: linear-gradient(180deg, #4c23ca 10%, #4635f3 50%);
+  }
+}
 .content .results .result__score .score__point {
   font-size: 4rem;
+}
+@media (min-width: 920px) {
+  .content .results .result__score .score__point {
+    font-size: 5.6rem;
+  }
 }
 .content .results .result__score .score__of {
   font-size: 1.2rem;
   color: hsl(241deg, 100%, 89%);
 }
+@media (min-width: 920px) {
+  .content .results .result__score .score__of {
+    font-size: 1.8rem;
+  }
+}
 .content .results .result__info {
   font-size: 2rem;
   margin-bottom: 20px;
   letter-spacing: 0.2rem;
+}
+@media (min-width: 920px) {
+  .content .results .result__info {
+    font-size: 2.6rem;
+  }
 }
 .content .results .result__description {
   width: 250px;
@@ -87,6 +117,12 @@ body {
   color: hsl(241deg, 100%, 89%);
   text-align: center;
   line-height: 2rem;
+}
+@media (min-width: 920px) {
+  .content .results .result__description {
+    font-size: 1.7rem;
+    line-height: 2.4rem;
+  }
 }
 .content .results .summary {
   width: 90%;
@@ -104,6 +140,11 @@ body {
   margin-bottom: 30px;
   font-weight: 800;
 }
+@media (min-width: 920px) {
+  .content .results .summary__title {
+    font-size: 2rem;
+  }
+}
 .content .results .summary .tags {
   display: flex;
   flex-direction: column;
@@ -118,11 +159,21 @@ body {
   border-radius: 12px;
   padding: 0 20px;
 }
+@media (min-width: 920px) {
+  .content .results .summary .tags .tag {
+    font-size: 1.6rem;
+  }
+}
 .content .results .summary .tags .tag__icon {
   margin-right: 14px;
 }
 .content .results .summary .tags .tag__name {
   font-size: 1.4rem;
+}
+@media (min-width: 920px) {
+  .content .results .summary .tags .tag__name {
+    font-weight: 700;
+  }
 }
 .content .results .summary .tags .tag__score {
   margin-left: auto;
@@ -130,6 +181,7 @@ body {
 }
 .content .results .summary .tags .tag__score span {
   color: hsl(224deg, 30%, 27%);
+  font-weight: 700;
 }
 .content .results .summary .tags .tag--reaction {
   background-color: #f9eae8;

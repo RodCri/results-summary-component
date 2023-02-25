@@ -43,11 +43,16 @@ body{
       @media(min-width:920px){
         height: 514px;
         justify-content: center;
+        background: linear-gradient(180deg, #6542fe 40%, #312cea 100%);
       }
       &__title{
         padding: 24px 0;
         font-size: 1.8rem;
         color: $light-lavender;
+        @media(min-width:920px){
+          font-size: 2.4rem;
+          padding: 0 0 4rem 0;
+        }
       }
       &__score{
         width: 140px;
@@ -59,18 +64,33 @@ body{
         justify-content: center;
         align-items: center;
         margin-bottom: 20px;
+        @media(min-width:920px){
+          width: 205px;
+          height: 195px;
+          margin-bottom: 4rem;
+          background: linear-gradient(180deg, #4c23ca 10%, #4635f3 50%);
+        }
         .score__point{
           font-size: 4rem;
+          @media(min-width:920px){
+            font-size: 5.6rem;
+          }
         }
         .score__of{
           font-size: 1.2rem;
           color: $light-lavender;
+          @media(min-width:920px){
+            font-size: 1.8rem;
+          }
         }
       }
       &__info{
         font-size: 2rem;
         margin-bottom: 20px;
         letter-spacing: .2rem;
+        @media(min-width:920px){
+          font-size: 2.6rem;
+        }
       }
       &__description{
         width: 250px;
@@ -78,6 +98,10 @@ body{
         color: $light-lavender;
         text-align: center;
         line-height: 2rem;
+        @media(min-width:920px){
+          font-size: 1.7rem;
+          line-height: 2.4rem;
+        }
       }
     }
     .summary{
@@ -92,6 +116,9 @@ body{
         color: $dark-gray-blue;
         margin-bottom: 30px;
         font-weight: 800;
+        @media(min-width:920px){
+          font-size: 2rem;
+        }
       }
       .tags{
         display: flex;
@@ -105,17 +132,24 @@ body{
           background-color: aquamarine;
           border-radius: 12px;
           padding: 0 20px;
+          @media(min-width:920px){
+            font-size: 1.6rem;
+          }
           &__icon{
             margin-right: 14px;
           }
           &__name{
             font-size: 1.4rem;
+            @media(min-width:920px){
+              font-weight: 700;
+            }
           }
           &__score{
             margin-left: auto;
             color: $light-lavender;
             span{
               color: $dark-gray-blue;
+              font-weight: 700;
             }
           }
           &--reaction{
